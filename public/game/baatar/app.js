@@ -231,7 +231,6 @@ function stopGame() {
     clearInterval(changeObstacleInterval);
     restartGameElement.classList.add('show');
     gameContainerElement.classList.add('stop');
-    stopVideoStream();
 }
 
 function restart() {
@@ -247,6 +246,7 @@ function main() {
     countScore();
     setHighScore(highscore);
     randomiseObstacle();
+    connectToMouthDetection();
 };
 
 main();
